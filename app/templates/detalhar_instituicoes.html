@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h2>Detalhando instituição</h2>
+{% if i %}
+<ul>
+    <li>Id: {{ i.id }}</li>
+    <li>Nome: {{ i.nome }}</li>
+    <li>Sigla: {{ i.sigla }}</li>
+</ul>
+{% else %}
+<div class="alert alert-danger">Nenhuma instituição cadastrada com esse id</div>
+{% endif %}
+{% endblock %}
